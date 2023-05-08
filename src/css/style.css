@@ -4,6 +4,7 @@
 
 body {
     background: url('../images/bg-desktop.svg') no-repeat;
+    background-size: cover;
     background-color: hsl(257, 40%, 49%);
     margin: 50px;
 }
@@ -65,19 +66,19 @@ body {
 
 .footer i {
     border: 1px solid #ffffff;
-    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin: 5px;
-}
-
-.footer i:nth-child(1) {
-    padding: 10px 12.5px;
+    transition: 0.3s;
 }
 
 .footer i:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
-    transition: 0.3s;
 }
 
 @media (max-width: 450px) {
@@ -115,4 +116,15 @@ body {
     }
 
 
+}
+
+@media (max-width: 800px){
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        display: block;
+    }
 }
